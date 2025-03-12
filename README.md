@@ -1,5 +1,5 @@
 # LARAVEL
-* PHP tabanlı web geliştirme [framewoküdür.](https://github.com/xBugor/WebFrameWork)
+* PHP tabanlı web geliştirme [frameworküdür.](https://github.com/xBugor/WebFrameWork)
 .
 * Açık kaynak kodludur.
 * Basit sözdizimi(syntax) sahiptir.
@@ -17,20 +17,47 @@
 * [Middleware](#Middleware) özelliği vardır.
 
 
+## Windows işletim sistemine Nasıl Kurulur ?
+
+ADIMLAR
+1.PHP kurmak
+
+ * Xammp yada wammp server uygulamaları kurabilirsiniz. (Önerilir)
+
+  *  Php buradan da kurabilirsiniz https://www.php.net/downloads  versiyonun en az 7 ve üzeri olması gerekiyor. 
+
+2. PHP bağımlıkları için composer yüklemek.Kısaca composer kütüphaneleri manuel olarak kurmak yerine  zahmetsiz bir şekilde yüklemene imkan tanıyor.
+    * https://getcomposer.org/
+
+3. laravelin yüklenmesi
+    * Komut satırını açın şu komutu girin composer global reguire laravel/installer
+4. laravel projesi oluşturma işlemi
+    * cd komutu ile istediğiniz bir klasöre geçin daha sonra bu klasör içerisnde şu kodu yazın
+   
+    ``` laravel new klasoradı``` klasoradı kısmını istediğiniz gibi ayarlayın.
+
+5. Kurulurken bazı bilgiler isteyebilir   
+  ![Photo by xBugor][resim]
+
+[resim]: ./assets/Kurulum1.PNG "Front-End Seçimi"
+
+- Eğer sadece backend ile ilgileniyorsanız: none yazıp Enter tuşuna basın. (Sonradan ekleme yapılabilir.)
+- Eğer React kullanarak dinamik bir frontend oluşturmayı planlıyorsan bu seçeneği tercih etmelisin.
+-  Eğer Vue.js kullanarak dinamik ve reaktif bir frontend oluşturmayı planlıyorsan, bu seçeneği seçmelisin.
+- Eğer JavaScript kullanmadan dinamik, reaktif bir kullanıcı arayüzü oluşturmak istiyorsan, bu seçenek iyi bir tercihtir. Özellikle PHP'ye odaklanmak istiyorsan tercih edebilirsin.
+
+  ![Photo by xBugor][resim]
+
+[resim]: ./assets/Kurulum2.PNG "Veri tabananı seçimi"
+
+* Hangi veritabanını kullanmak istiyorsanız seçin ve yazın.
 
 
+![Photo by xBugor][resim]
 
+[resim]: ./assets/Kurulum3.PNG "Veritabanı default ayarlar"
 
-
-
-
-
-
-
-
-
-
-
+* Burada default olarak veritabanları satırlar sutünlar oluşturulsun diye soruyor.
 
 
 
