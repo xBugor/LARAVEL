@@ -53,13 +53,16 @@ ADIMLAR
 * Hangi veritabanını kullanmak istiyorsanız seçin ve yazın.
 
 
-![Photo by xBugor][resim]
+  ![Photo by xBugor][resim]
 
 [resim]: ./assets/Kurulum3.PNG "Veritabanı default ayarlar"
 
 * Burada default olarak veritabanları satırlar sutünlar oluşturulsun diye soruyor.
 
 
+  ![Photo by xBugor][resim]
+
+[resim]: ./assets/Kurulum4.PNG "Veritabanı default ayarlar"
 
 
 
