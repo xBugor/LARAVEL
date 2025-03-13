@@ -46,25 +46,25 @@ ADIMLAR
 -  Eğer Vue.js kullanarak dinamik ve reaktif bir frontend oluşturmayı planlıyorsan, bu seçeneği seçmelisin.
 - Eğer JavaScript kullanmadan dinamik, reaktif bir kullanıcı arayüzü oluşturmak istiyorsan, bu seçenek iyi bir tercihtir. Özellikle PHP'ye odaklanmak istiyorsan tercih edebilirsin.
 
-  ![Photo by xBugor][resim]
+  ![Photo by xBugor][resim2]
 
-[resim]: ./assets/Kurulum2.PNG "Veri tabananı seçimi"
+[resim2]: ./assets/Kurulum2.PNG "Veri tabananı seçimi"
 
 * Hangi veritabanını kullanmak istiyorsanız seçin ve yazın.
 
 
-  ![Photo by xBugor][resim]
+  ![Photo by xBugor][resim3]
 
-[resim]: ./assets/Kurulum3.PNG "Veritabanı default ayarlar"
+[resim3]: ./assets/Kurulum3.PNG "Veritabanı default ayarlar"
 
 * Burada default olarak veritabanları satırlar sutünlar oluşturulsun diye soruyor.
 
 
-  ![Photo by xBugor][resim]
+  ![Photo by xBugor][resim4]
 
-[resim]: ./assets/Kurulum4.PNG "Veritabanı default ayarlar"
+[resim4]: ./assets/Kurulum4.PNG "Veritabanı default ayarlar"
 
-
+Laravel'in ön yüz (frontend) varlıklarını (assets) derlemek için gereklidir. Laravel, ön yüz dosyalarını derlemek için Node.js ve npm (Node Package Manager) kullanır. Yüklenmez ise front end tarafı bozuk çalışabilir.
 
 
 
