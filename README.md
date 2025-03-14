@@ -73,7 +73,7 @@ Not MVC sistemin bilindiği varsayıldı.
 
 :green_apple: *MVC sisteminde controller bulunduğu klasör*
 
- ** yüklediğinizyer/app/http/controller **
+ yüklediğinizyer/app/http/controller 
 
 
 :green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
@@ -86,12 +86,13 @@ Not MVC sistemin bilindiği varsayıldı.
 
 /resources/views
 
-4.Buraya sayfa eklemek için blade de kullanmanız gerekiyor.
+:green_apple:Laravelde web sitesinin  sayfasını blade ile  kullanmanız gerekiyor.
      
-     dosyaadı.blade.php
+dosyaadı.blade.php
 
-5. İşlem yapılınca nereye gidileceğini url olarak ayarladığı yere gitmesi
-     /routes/web.php dosyasından ayarlanıyor.
+:green_apple:İşlem yapılınca nereye gidileceğini url olarak ayarladığı yere gitmesi
+     
+  /routes/web.php dosyasından ayarlanıyor.i
 
 ### Migrasyon
 Geleneksel yöntemlerde veritabanı tablolarını manuel olarak oluşturup değiştirmek gerekirken, migration sayesinde bu işlemler kod ile tanımlanabilir ve sürüm kontrolüne alınabilir.Migration, veritabanı tablolarını oluşturmak, güncellemek ve silmek için kullanılan Laravel'in bir özelliğidir.
