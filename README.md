@@ -68,27 +68,30 @@ Laravel'in ön yüz (frontend) varlıklarını (assets) derlemek için gereklidi
 
 
 
+## Dosyaları Tanıyalım
+Not MVC sistemin bilindiği varsayıldı.
+
+:green_apple: *MVC sisteminde controller bulunduğu klasör*
+
+ ** yüklediğinizyer/app/http/controller **
 
 
-Yükleme işlemi tamamalandıktan sonra yüklediğinizyer/app/http/controller
-
-*MVC sisteminde controller*
-
-Veritabanı işlemleri için models klasörü
+:green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
 
 
 /app/http/models
 
 
-MVC sistemindeki viewler için
+:green_apple: MVC sistemindeki viewler için
 
 /resources/views
 
-Buraya sayfa eklemek için blade de kullanmanız gerekiyor.
+4.Buraya sayfa eklemek için blade de kullanmanız gerekiyor.
      
      dosyaadı.blade.php
 
-
+5. İşlem yapılınca nereye gidileceğini url olarak ayarladığı yere gitmesi
+     /routes/web.php dosyasından ayarlanıyor.
 
 ### Migrasyon
 Geleneksel yöntemlerde veritabanı tablolarını manuel olarak oluşturup değiştirmek gerekirken, migration sayesinde bu işlemler kod ile tanımlanabilir ve sürüm kontrolüne alınabilir.Migration, veritabanı tablolarını oluşturmak, güncellemek ve silmek için kullanılan Laravel'in bir özelliğidir.
