@@ -70,12 +70,23 @@ Laravel'in ön yüz (frontend) varlıklarını (assets) derlemek için gereklidi
 
 
 
+Yükleme işlemi tamamalandıktan sonra yüklediğinizyer/app/http/controller
+
+*MVC sisteminde controller*
+
+Veritabanı işlemleri için models klasörü
 
 
+/app/http/models
 
 
+MVC sistemindeki viewler için
 
+/resources/views
 
+Buraya sayfa eklemek için blade de kullanmanız gerekiyor.
+     
+     dosyaadı.blade.php
 
 
 
