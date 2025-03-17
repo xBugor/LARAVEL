@@ -89,7 +89,7 @@ Not: MVC sistemin bilindiği varsayıldı anlatımda.
 
 [resim5]: ./assets/controller.png "controller ayarı"
 
-yukarıdaki gibi bir controllerın web.php 
+yukarıdaki gibi bir controllerın web.php dosyası
 
 ```use App\Http\Controller\Dene\DeneController```
 
@@ -119,7 +119,10 @@ dosyaadı.blade.php
 
  
 
-:green_apple:
+:green_apple: ([MiddleWare](#Middleware)) dosyası
+ \app\Http\Middleware\Girismiddleware.php
+içerisindedir.
+
 
 ### Migrasyon
 Geleneksel yöntemlerde veritabanı tablolarını manuel olarak oluşturup değiştirmek gerekirken, migration sayesinde bu işlemler kod ile tanımlanabilir ve sürüm kontrolüne alınabilir.Migration, veritabanı tablolarını oluşturmak, güncellemek ve silmek için kullanılan Laravel'in bir özelliğidir.
