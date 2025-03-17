@@ -20,6 +20,7 @@
 ## Windows işletim sistemine Nasıl Kurulur ?
 
 ADIMLAR
+
 1.PHP kurmak
 
  * Xammp yada wammp server uygulamaları kurabilirsiniz. (Önerilir)
@@ -31,6 +32,8 @@ ADIMLAR
 
 3. laravelin yüklenmesi
     * Komut satırını açın şu komutu girin composer global reguire laravel/installer
+
+:exclamation: Bu adamda zip ile ilgili bir hata oluyorsanız lütfen php.ini dosyasında "extension=zip" önündeki noktali virgülü(;) silin ve kaydedin. Xamp veya diğerlerini yeniden başlatın.
 4. laravel projesi oluşturma işlemi
     * cd komutu ile istediğiniz bir klasöre geçin daha sonra bu klasör içerisnde şu kodu yazın
    
@@ -69,12 +72,18 @@ Laravel'in ön yüz (frontend) varlıklarını (assets) derlemek için gereklidi
 
 
 ## Dosyaları Tanıyalım
-Not MVC sistemin bilindiği varsayıldı.
+
+Not: MVC sistemin bilindiği varsayıldı anlatımda.
+
+:green_apple:  web.php dosyası, uygulamanızın web rotalarını ([Route](#Route)) tanımladığınız dosyadır.
 
 :green_apple: *MVC sisteminde controller bulunduğu klasör*
 
  yüklediğinizyer/app/http/controller 
-
+ 
+  -yeni controller oluşturmak için php artisan make:controller yenicontroller
+  
+  Not: Yeni oluşturduğunuz controllerı namespace kısmından sonraki kısmı alıp web.php dosyasına use yazıp devamına yapıştırıp entegre etmeniz gerekmektedir. Aksi halde hata verir.
 
 :green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
 
@@ -92,7 +101,15 @@ dosyaadı.blade.php
 
 :green_apple:İşlem yapılınca nereye gidileceğini url olarak ayarladığı yere gitmesi
      
-  /routes/web.php dosyasından ayarlanıyor.i
+  /routes/web.php dosyasından ayarlanıyor.
+
+:green_apple: Public dosyanın içine  css+javascript ve html dosyalarınızı ekleyebilirsiniz. 
+
+:green_apple: .env dosyasının içerisinde database ile ilgili konfigürasyonlar yapabilirsin.
+
+ 
+
+:green_apple:
 
 ### Migrasyon
 Geleneksel yöntemlerde veritabanı tablolarını manuel olarak oluşturup değiştirmek gerekirken, migration sayesinde bu işlemler kod ile tanımlanabilir ve sürüm kontrolüne alınabilir.Migration, veritabanı tablolarını oluşturmak, güncellemek ve silmek için kullanılan Laravel'in bir özelliğidir.
@@ -104,3 +121,16 @@ Middleware, bir filtre gibi çalışır. Örneğin:
 - Kullanıcının IP adresi belirli bir aralıkta mı? (Güvenlik)
 - Gelen istekleri logla.
 - İstek belirli saatler dışında mı geliyor? (Erişim Kontrolü)
+
+### Route
+Gelen HTTP isteklerini (örneğin, bir kullanıcı bir URL'yi ziyaret ettiğinde) belirli bir işlemi gerçekleştirecek şekilde yönlendiren yapıdır. Laravel, rotalar aracılığıyla kullanıcıların belirli URL'lere yönlendirilmesini ve bu isteklerin nasıl işleneceğini tanımlar.
+Rota Türleri
+
+-GET: Sayfa görüntülemek için kullanılır (tarayıcıda bir sayfa açmak).
+
+-POST: Form verilerini göndermek için kullanılır.
+
+-PUT: Veriyi güncellemek için kullanılır.
+
+-DELETE: Veriyi silmek için kullanılır
+
