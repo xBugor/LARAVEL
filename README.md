@@ -85,9 +85,9 @@ Not: MVC sistemin bilindiği varsayıldı anlatımda.
   
   Not: Yeni oluşturduğunuz controllerı namespace kısmından sonraki kısmı alıp web.php dosyasına use yazıp devamına yapıştırdıktan sonra \ işareti koyup yeni controllerdaki classtan sonra gelen değeri yapıştırmalısınız etmeniz gerekmektedir. Aksi halde hata verir.
 
- ![Photo by xBugor][resim4]
+ ![Photo by xBugor][resim5]
 
-[resim4]: ./assets/controller.png "controller ayarı"
+[resim5]: ./assets/controller.png "controller ayarı"
 
 
 :green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
