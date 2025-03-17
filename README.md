@@ -135,6 +135,7 @@ Middleware, bir filtre gibi çalışır. Örneğin:
 - Gelen istekleri logla.
 - İstek belirli saatler dışında mı geliyor? (Erişim Kontrolü)
 
+
 ### Route
 Gelen HTTP isteklerini (örneğin, bir kullanıcı bir URL'yi ziyaret ettiğinde) belirli bir işlemi gerçekleştirecek şekilde yönlendiren yapıdır. Laravel, rotalar aracılığıyla kullanıcıların belirli URL'lere yönlendirilmesini ve bu isteklerin nasıl işleneceğini tanımlar.
 Rota Türleri
