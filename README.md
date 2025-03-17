@@ -89,6 +89,11 @@ Not: MVC sistemin bilindiği varsayıldı anlatımda.
 
 [resim5]: ./assets/controller.png "controller ayarı"
 
+yukarıdaki gibi bir controllerın web.php 
+
+```use App\Http\Controller\Dene\DeneController```
+
+
 
 :green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
 
