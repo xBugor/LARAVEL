@@ -10,8 +10,7 @@
 
     ```<h1>{{ $degisken }}</h1>``` gibi
 
-* **Laravel Artisan CLI**  MVC için yeni controller oluşturma, modeller oluşturma ve veri tabanı [migrasyon](#Migrasyon)
- oluşturmak için hızlı bir çözümdür.
+* **Laravel Artisan CLI**   Server başlatılması,veri tabanı [migrasyon](#Migrasyon) oluşturma,controller oluşturma vs gibi tüm işlemlerin yapılabildiği komut satırı arayüzüdür.
 
 
 * [Middleware](#Middleware) özelliği vardır.
@@ -23,7 +22,7 @@ ADIMLAR
 
 1.PHP kurmak
 
- * Xammp yada wammp server uygulamaları kurabilirsiniz. (Önerilir)
+  * Xammp yada wammp server uygulamaları kurabilirsiniz aracaılığyla kurmak.(Önerilir)
 
   *  Php buradan da kurabilirsiniz https://www.php.net/downloads  versiyonun en az 7 ve üzeri olması gerekiyor. 
 
@@ -31,13 +30,19 @@ ADIMLAR
     * https://getcomposer.org/
 
 3. laravelin yüklenmesi
-    * Komut satırını açın şu komutu girin composer global reguire laravel/installer
+    *  Komut satırını açın şu komutu girin:
 
-:exclamation: Bu adamda zip ile ilgili bir hata oluyorsanız lütfen php.ini dosyasında "extension=zip" önündeki noktali virgülü(;) silin ve kaydedin. Xamp veya diğerlerini yeniden başlatın.
+       <code> `composer global reguire laravel/installer` </code>
+  
+:exclamation: Bu adamda zip ile ilgili bir hata oluyorsanız lütfen php.ini dosyasında "extension=zip" önündeki noktali virgülü(;) silin ve kaydedin ve programları  yeniden başlatın.
+
 4. laravel projesi oluşturma işlemi
-    * cd komutu ile istediğiniz bir klasöre geçin daha sonra bu klasör içerisnde şu kodu yazın
+    
+    cd komutu ile istediğiniz bir klasöre geçin daha sonra bu klasör içerisinde şu kodu yazın.
    
-    ``` laravel new klasoradı``` klasoradı kısmını istediğiniz gibi ayarlayın.
+    ``` laravel new klasoradı ```
+    
+    ( klasöradı kısmını istediğiniz gibi ayarlayın.)
 
 5. Kurulurken bazı bilgiler isteyebilir   
   ![Photo by xBugor][resim]
@@ -73,7 +78,7 @@ Laravel'in ön yüz (frontend) varlıklarını (assets) derlemek için gereklidi
 
 ## Dosyaları Tanıyalım
 
-Not: MVC sistemin bilindiği varsayıldı anlatımda.
+Not: Bu kısımda [MVC](https://github.com/xBugor/MVC) sistemin bilindiği varsayıldı .
 
 :green_apple:  web.php dosyası, uygulamanızın web rotalarını ([Route](#Route)) tanımladığınız dosyadır.
 
@@ -81,36 +86,36 @@ Not: MVC sistemin bilindiği varsayıldı anlatımda.
 
  yüklediğinizyer/app/http/controller 
  
-  -yeni controller oluşturmak için php artisan make:controller yenicontroller
+  - yeni controller oluşturmak için php artisan make:controller yenicontroller
   
-  Not: Yeni oluşturduğunuz controllerı namespace kısmından sonraki kısmı alıp web.php dosyasına use yazıp devamına yapıştırdıktan sonra \ işareti koyup yeni controllerdaki classtan sonra gelen değeri yapıştırmalısınız etmeniz gerekmektedir. Aksi halde hata verir.
+  Not: Yeni oluşturduğunuz controllerın namespace yazısından sonraki kısmı kopyalıp web.php dosyasına 'use' yazıp  yapıştırdıktan sonra \ işareti koyup yeni controllerdaki classının adını yapıştırmalısınız.  Aksi halde hata verir.
 
  ![Photo by xBugor][resim5]
 
 [resim5]: ./assets/controller.png "controller ayarı"
 
-yukarıdaki gibi bir controllerın web.php dosyası
+Yukarıdaki gibi bir controllerın web.php dosyası içerisne şu şekilde entegre etmek gerekir.
 
 ```use App\Http\Controller\Dene\DeneController```
 
 
 
-:green_apple: Veritabanı işlemleri için models klasörü buşunduğu yer
+:green_apple: Veritabanı işlemleri için models klasörü bulunduğu yer:
 
 
 /app/http/models
 
 
-:green_apple: MVC sistemindeki viewler için
+:green_apple: MVC sistemindeki viewler bulunduğu yer:
 
 /resources/views
 
-:green_apple:Laravelde web sitesinin  sayfasını blade ile  kullanmanız gerekiyor.
+:green_apple:Laravelde web sitesinin php dosylarında blade kullanmanız gerekiyor.
      
-dosyaadı.blade.php
+  dosyaadı.blade.php
 
-:green_apple:İşlem yapılınca nereye gidileceğini url olarak ayarladığı yere gitmesi
-     
+:green_apple:Herhangibir işlem yapıldığında hangi url'ye gidileceğini gösteren route dosyası.(web.php)
+
   /routes/web.php dosyasından ayarlanıyor.
 
 :green_apple: Public dosyanın içine  css+javascript ve html dosyalarınızı ekleyebilirsiniz. 
@@ -149,3 +154,6 @@ Rota Türleri
 -DELETE: Veriyi silmek için kullanılır
 
 ### Controller
+Kullanıcıdan gelen istekler burda değerlendirilir. İsteğin detaylarına göre hangi işlemin yapılacağını seçer.(veri güncelleme gibi )
+
+Gerekli verileri Model’den alır, üzerinde işlem yapar ve View’e (görünüme) yönlendirir. View’e işlenmiş verileri iletir ve istemciye HTML, JSON veya başka bir formatta yanıt döndürülmesini sağlar.
