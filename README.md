@@ -32,7 +32,7 @@ ADIMLAR
 3. laravelin yüklenmesi
     *  Komut satırını açın şu komutu girin:
 
-       <code> `composer global reguire laravel/installer` </code>
+       <code> `composer global require laravel/installer` </code>
   
 :exclamation: Bu adamda zip ile ilgili bir hata oluyorsanız lütfen php.ini dosyasında "extension=zip" önündeki noktali virgülü(;) silin ve kaydedin ve programları  yeniden başlatın.
 
