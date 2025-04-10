@@ -86,7 +86,7 @@ Not: Bu kısımda [MVC](https://github.com/xBugor/MVC) sistemin bilindiği varsa
 
  yüklediğinizyer/app/http/controller 
  
-  - yeni controller oluşturmak için php artisan make:controller yenicontroller
+  - yeni controller oluşturmak için  ``` php artisan make:controller yenicontroller ```
   
   Not: Yeni oluşturduğunuz controllerın namespace yazısından sonraki kısmı kopyalıp web.php dosyasına 'use' yazıp  yapıştırdıktan sonra \ işareti koyup yeni controllerdaki classının adını yapıştırmalısınız.  Aksi halde hata verir.
 
